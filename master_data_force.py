@@ -121,7 +121,7 @@ alpha_original_j[radia_original_j<0] = fun_wrapTo2pi(alpha_original_j[radia_orig
 radia_original_j[radia_original_j<0] = np.abs(radia_original_j[radia_original_j<0])
 
 data_num         = radia_original_j.shape[0]
-print('data_num = {}'.format(data_num))
+#print('data_num = {}'.format(data_num))
 
 ## delet the data that violate the constraints
 ind_good         = radia_original_j>=d_star
