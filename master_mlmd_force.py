@@ -53,7 +53,7 @@ np.save('model_force_info.npy',np.array([dict_info]))
 np.random.seed(30)
 num_data  = datain.shape[0]
 ind_all   = np.random.permutation(num_data)
-num_test  = np.int(np.floor(datain.shape[0]*rtt) )
+num_test  = int(np.floor(datain.shape[0]*rtt) )
 
 ind_te    = ind_all[0:num_test]
 ind_tr    = ind_all[num_test:]
